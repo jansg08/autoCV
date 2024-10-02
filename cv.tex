@@ -45,6 +45,13 @@
 % {Fontin.otf}
 
 %----------------------------------------------------------------------------------------
+%	Suppress warnings 
+%----------------------------------------------------------------------------------------
+
+% % Suppresses 'wrong length of dash may have been used' warning
+% chktex-file 8
+
+%----------------------------------------------------------------------------------------
 %	PACKAGES
 %----------------------------------------------------------------------------------------
 \usepackage{url}
@@ -53,7 +60,7 @@
 %other packages for formatting
 \RequirePackage{color}
 \RequirePackage{graphicx}
-\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[dvipsnames]{xcolor} % removed usenames
 \usepackage[scale=0.9]{geometry}
 
 %tabularx environment
@@ -116,12 +123,13 @@
 % \end{tabularx}
 
 \begin{tabularx}{\linewidth}{@{} C @{}}
-    \Huge{Jack Hansjee}                                             \\[7.5pt]
+    \Huge{Jack Hansjee}                                              \\[7.5pt]
+    \large{\textit{Software Development in Javascript}} \vspace{2mm} \\
     \href{https://github.com/jansg08}{\raisebox{-0.05\height}\faGithub\ jansg08} \ $|$ \
     \href{https://linkedin.com/in/jack-hansjee-79478b16b}{\raisebox{-0.05\height}\faLinkedin\ Jack Hansjee} \ $|$ \
     \href{mailto:jack@hansjee.com}{\raisebox{-0.05\height}\faEnvelope \ jack@hansjee.com} \ $|$ \
     \href{tel:+44744301988}{\raisebox{-0.05\height}\faMobile \ 07443 019 881} \ $|$ \
-    \href{https://}{\raisebox{-0.05\height}{\faMapMarker*}\ London} \\
+    \href{https://}{\raisebox{-0.05\height}{\faMapMarker*}\ London}  \\
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
@@ -130,11 +138,11 @@
 
 %Interests/ Keywords/ Summary
 \section{Summary}
-A keen interest in problem solving has manifested itself in the pursuit of a
+A keen interest in problem-solving has manifested itself in the pursuit of a
 software development position aided by the strong communication and analytical
 skills developed through the Northcoder's bootcamp. Proven to be a fast learner
 and a hard worker through time there as well as during a year out in a rare
-opportunity as a senior member of an auction house managing and developing
+opportunity as a senior member of an auction house, managing and developing
 their technology platform.
 
 %Experience
@@ -168,8 +176,9 @@ their technology platform.
     }
 \end{tabularx}
 \begin{tabularx}{\linewidth}{@{}l X@{}}
-    \vspace{-3mm}                                                                                                                          \\
-    \textit{Reference:} & \textit{Matthew Elton, Managing Director} \hfill \textit{\href{mailto:matthew@hotlotz.com}{matthew@hotlotz.com}}
+    \vspace{-3mm}
+    %    Commented out temporarily for GDPR reasons                                                                                                                          \\
+    %    \textit{Reference:} & \textit{Matthew Elton, Managing Director} \hfill \textit{\href{mailto:matthew@hotlotz.com}{matthew@hotlotz.com}}
 \end{tabularx}
 
 %Projects
@@ -208,9 +217,8 @@ their technology platform.
 \begin{tabularx}{\linewidth}{@{}l X@{}}
     %2021 -- present & BEng (Aeronautical Engineering) at \textbf{Loughborough University} \hfill \\
 
-    3 A Levels at \textbf{Tanglin Trust School} (A, A, B) & \hfill 2018 -- 2020                                           \\
-
-                                                          & 10 GCSEs at \textbf{The Harrodian School} \hfill 2016 -- 2018 \\
+    3 A Levels at \textbf{Tanglin Trust School} (A, A, B) & \hfill 2018 -- 2020 \\
+    10 GCSEs at \textbf{The Harrodian School}             & \hfill 2016 -- 2018 \\
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
@@ -218,7 +226,7 @@ their technology platform.
 %----------------------------------------------------------------------------------------
 \section{Skills}
 \begin{tabularx}{\linewidth}{@{}l X@{}}
-    Programming Languages & \textbf{Javascript - Node.js and in the browser}     \\
+    Programming Languages & \textbf{Javascript - in Node.js and the browser}     \\
     Testing               & \textbf{TDD (Test Driven Development), Jest}         \\
     Back-end              & \textbf{Express.js}                                  \\
     Front-end             & \textbf{HTML, CSS}                                   \\
