@@ -97,39 +97,13 @@
 %debug page outer frames
 %\usepackage{showframe}
 
-
-% job listing environments
-\newenvironment{jobshort}[2]
-    {
-    \begin{tabularx}{\linewidth}{@{}l X r@{}}
-    \textbf{#1} & \hfill &  #2 \\[3.75pt]
-    \end{tabularx}
-    }
-    {
-    }
-
-\newenvironment{joblong}[2]
-    {
-    \begin{tabularx}{\linewidth}{@{}l X r@{}}
-    \textbf{#1} & \hfill &  #2 \\[3.75pt]
-    \end{tabularx}
-    \begin{minipage}[t]{\linewidth}
-    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt,label=--]
-    }
-    {
-    \end{itemize}
-    \end{minipage}    
-    }
-
-
-
 %----------------------------------------------------------------------------------------
 %	BEGIN DOCUMENT
 %----------------------------------------------------------------------------------------
 \begin{document}
 
 % non-numbered pages
-\pagestyle{empty} 
+\pagestyle{empty}
 
 %----------------------------------------------------------------------------------------
 %	TITLE
@@ -142,12 +116,12 @@
 % \end{tabularx}
 
 \begin{tabularx}{\linewidth}{@{} C @{}}
-\Huge{Your Name} \\[7.5pt]
-\href{https://github.com/username}{\raisebox{-0.05\height}\faGithub\ username} \ $|$ \ 
-\href{https://linkedin.com/in/username}{\raisebox{-0.05\height}\faLinkedin\ username} \ $|$ \ 
-\href{https://mysite.com}{\raisebox{-0.05\height}\faGlobe \ mysite.com} \ $|$ \ 
-\href{mailto:email@mysite.com}{\raisebox{-0.05\height}\faEnvelope \ email@mysite.com} \ $|$ \ 
-\href{tel:+000000000000}{\raisebox{-0.05\height}\faMobile \ +00.00.000.000} \\
+    \Huge{Jack Hansjee}                                             \\[7.5pt]
+    \href{https://github.com/jansg08}{\raisebox{-0.05\height}\faGithub\ jansg08} \ $|$ \
+    \href{https://linkedin.com/in/jack-hansjee-79478b16b}{\raisebox{-0.05\height}\faLinkedin\ Jack Hansjee} \ $|$ \
+    \href{mailto:jack@hansjee.com}{\raisebox{-0.05\height}\faEnvelope \ jack@hansjee.com} \ $|$ \
+    \href{tel:+44744301988}{\raisebox{-0.05\height}\faMobile \ 07443 019 881} \ $|$ \
+    \href{https://}{\raisebox{-0.05\height}{\faMapMarker*}\ London} \\
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
@@ -156,62 +130,103 @@
 
 %Interests/ Keywords/ Summary
 \section{Summary}
-This CV is automatically generated and deployed using the \href{https://github.com/jitinnair1/autoCV}{autoCV} template along with GitHub Actions such that a new version of the CV is compiled, published and ready for use when the cv.tex file is updated. For details, \href{https://github.com/jitinnair1/autoCV}{click here}.
+A keen interest in problem solving has manifested itself in the pursuit of a
+software development position aided by the strong communication and analytical
+skills developed through the Northcoder's bootcamp. Proven to be a fast learner
+and a hard worker through time there as well as during a year out in a rare
+opportunity as a senior member of an auction house managing and developing
+their technology platform.
 
 %Experience
 \section{Work Experience}
 
-\begin{jobshort}{Designation}{Jan 2021 - present}
-long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width
-\end{jobshort}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+    \textbf{Head of Information Technology, Hotlotz Auctioneers} & \hfill Jun 2020 -- Aug 2021 \\[3.75pt]
+    \vspace{-5mm}                                                                              \\
+    \multicolumn{2}{@{}X@{}}{\textit{Responsibilities}}                                        \\
+    \multicolumn{2}{@{}X@{}}{
+    \begin{minipage}[t]{\linewidth}
+        \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+            \item[--] Purchasing and maintaining IT infrastructure within the saleroom and offices
+            \item[--] Negotiating supplier contracts for long-term technological-related needs
+            \item[--] Supporting customers with queries regarding the website and the bidding process for online auctions
+            \item[--] Incorporating customer feedback to improve the website’s user experience
+        \end{itemize}
+    \end{minipage}
+    }                                                                                          \\
+    \vspace{-3mm}                                                                              \\
+    \multicolumn{2}{@{}X@{}}{\textit{Achievements}}                                            \\
+    \multicolumn{2}{@{}X@{}}{
+    \begin{minipage}[t]{\linewidth}
+        \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+            \item[--] Project managed a major overhaul of the company’s website and online bidding platform
+            \item[--] Oversaw complete redesign of the website’s frontend and a ground-up rebuild of the backend to improve the efficiency of stock-tracking
+            \item[--] Liaised with a software development company over nine months using design mock-ups to clearly impart the Managing Director’s Vision
+            \item[--] Assisted the accounting department in preparing the company to become tax-registered by creating a pricing tool that allows the commission structure to be reverse-engineered using a desired net profit figure.
+        \end{itemize}
+    \end{minipage}
+    }
+\end{tabularx}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+    \vspace{-3mm}                                                                                                                          \\
+    \textit{Reference:} & \textit{Matthew Elton, Managing Director} \hfill \textit{\href{mailto:matthew@hotlotz.com}{matthew@hotlotz.com}}
+\end{tabularx}
 
-
-\begin{joblong}{Designation}{Mar 2019 - Jan 2021}
-\item long long line of blah blah that will wrap when the table fills the column width
-\item again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah. again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah
-\end{joblong}
-  
 %Projects
-\section{Projects}
+\section{Other Interests}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Some Project} & \hfill \href{https://some-link.com}{Link to Demo} \\[3.75pt]
-\multicolumn{2}{@{}X@{}}{long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width}  \\
+    \textbf{Sergeant, Air Training Corps} & \hfill Sept 2015 -- Jul 2018 \\[3.75pt]
+    \vspace{-5mm}                                                        \\
+    \multicolumn{2}{@{}X@{}}{\textit{Responsibilities}}                  \\
+    \multicolumn{2}{@{}X@{}}{
+    \begin{minipage}[t]{\linewidth}
+        \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+            \item[--] Training junior cadets in core skills such as drill and theory of flight
+            \item[--] Resolving conflicts arising between cadets and promoting social behaviour
+        \end{itemize}
+    \end{minipage}
+    }                                                                    \\
+    \vspace{-3mm}                                                        \\
+    \multicolumn{2}{@{}X@{}}{\textit{Achievements}}                      \\
+    \multicolumn{2}{@{}X@{}}{
+    \begin{minipage}[t]{\linewidth}
+        \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+            \item[--] Built a comprehensive training structure to create a more engaging experience for cadets
+            \item[--] Received an award recognising outstanding community service by the Lord Lieutenant of Greater London
+            \item[--] Completed the ‘Master Cadet’ course consisting of principles of flight and propulsion theory
+            \item[--] Completed the ACLC, the highest badge earned for leadership within the ATC
+        \end{itemize}
+    \end{minipage}
+    }
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION
 %----------------------------------------------------------------------------------------
 \section{Education}
-\begin{tabularx}{\linewidth}{@{}l X@{}}	
-2030 - present & PhD (Subject) at \textbf{University} \hfill \normalsize (GPA: 4.0/4.0) \\
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+    %2021 -- present & BEng (Aeronautical Engineering) at \textbf{Loughborough University} \hfill \\
 
-2023 - 2027 & Bachelor's Degree at \textbf{College} \hfill (GPA: 4.0/4.0) \\ 
+    3 A Levels at \textbf{Tanglin Trust School} (A, A, B) & \hfill 2018 -- 2020                                           \\
 
-2022 & Class 12th Some Board \hfill  (Grades) \\
-
-2021 & Class 10th Some Board \hfill  (Grades) \\
+                                                          & 10 GCSEs at \textbf{The Harrodian School} \hfill 2016 -- 2018 \\
 \end{tabularx}
-
-%----------------------------------------------------------------------------------------
-%	PUBLICATIONS
-%----------------------------------------------------------------------------------------
-\section{Publications}
-\begin{refsection}[citations.bib]
-\nocite{*}
-\printbibliography[heading=none]
-\end{refsection}
 
 %----------------------------------------------------------------------------------------
 %	SKILLS
 %----------------------------------------------------------------------------------------
 \section{Skills}
 \begin{tabularx}{\linewidth}{@{}l X@{}}
-Some Skills &  \normalsize{This, That, Some of this and that etc.}\\
-Some More Skills  &  \normalsize{Also some more of this, Some more that, And some of this and that etc.}\\  
+    Programming Languages & \textbf{Javascript - Node.js and in the browser}     \\
+    Testing               & \textbf{TDD (Test Driven Development), Jest}         \\
+    Back-end              & \textbf{Express.js}                                  \\
+    Front-end             & \textbf{HTML, CSS}                                   \\
+    Hosting               & \textbf{Cloudflare}                                  \\
+    Other                 & \textbf{Paired programming, technical communication} \\%SDL, Agile and SCRUM methodologies
 \end{tabularx}
 
-\vfill
-\center{\footnotesize Last updated: \today}
+%\vfill
+%\center{\footnotesize Last updated: \today}
 
 \end{document}
