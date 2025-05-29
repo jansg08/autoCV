@@ -146,10 +146,10 @@ technology platform.
 
 \section{Skills}
 \begin{tabularx}{\linewidth}{@{}l X@{}}
-    Programming Languages \hspace{10px} & \textbf{Javascript, SQL, MATLAB}                             \\
+    Programming Languages \hspace{10px} & \textbf{JavaScript, TypeScript, SQL, MATLAB}                 \\
     Testing                             & \textbf{TDD (Test Driven Development), Jest, Supertest}      \\
     Back-end                            & \textbf{Node.js, Express.js, PostgreSQL}                     \\
-    Front-end                           & \textbf{HTML, CSS}                                           \\
+    Front-end                           & \textbf{HTML, CSS, React, React Router v7 (Remix)}           \\
     Hosting                             & \textbf{Cloudflare, Supabase, Render}                        \\
     CI/CD                               & \textbf{GitHub Actions}                                      \\
     Other                               & \textbf{Paired programming, SDL, AGILE methodologies, LaTeX} \\%SDL, Agile and SCRUM methodologies
@@ -164,55 +164,41 @@ technology platform.
 \section{Projects}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-    \textbf{News API}                                                     & \hfill Oct 2024                                                               \\[2.75pt]
-    \vspace{-5mm}                                                                                                                                         \\
-    \textit{Built with Node.js, Express.js, node-postgres and PostgreSQL} & \hfill \textit{\href{https://github.com/jansg08/news-api}{GitHub Repository}} \\
+    \textbf{News API}                                                     & \hfill Oct 2024                                                                                                                                     \\[2.75pt]
+    \vspace{-5mm}                                                                                                                                                                                                               \\
+    \textit{Built with Node.js, Express.js, node-postgres and PostgreSQL} & \hfill \textit{\href{https://github.com/jansg08/news-api}{GitHub Repository}} or \textit{\href{https://news-api-m05g.onrender.com}{Hosted Version}} \\
+    \vspace{-4mm}                                                                                                                                                                                                               \\
     \multicolumn{2}{@{}X@{}}{
     \begin{minipage}[t]{\linewidth}
-        \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-            \item[--] Provides a lightweight and robust RESTful API to manipulate data for a news aggregation site
-            \item[--] Supports full CRUD operations with features like user posted comments and patch-based voting
-            \item[--] Secured with unit tests written with Jest, and integration tests written with supertest
-            \item[--] Features continuous integration testing workflows hosted by GitHub actions for improved stability
-        \end{itemize}
+        A lightweight, but robust RESTful API to read and write data for a news articles, their comments and their authors. Validated with full integration testing run in a GitHub Actions pipeline.
     \end{minipage}
-    }                                                                                                                                                     \\
-    \vspace{-3mm}
+    }
+    \vspace{-3mm}                                                                                                                                                                                                               \\                                                                  \\
 \end{tabularx}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-    \textbf{Frontend News Site}                              & \hfill Nov 2024                                                              \\[2.75pt]
-    \vspace{-5mm}                                                                                                                           \\
-    \textit{Built with React, React Router, Axios, and Vite} & \hfill \textit{\href{https://github.com/jansg08/nc-news}{GitHub Repository}} \\
+    \textbf{NC News - A Frontend News Site}                  & \hfill Nov 2024                                                                                                                           \\[2.75pt]
+    \vspace{-5mm}                                                                                                                                                                                        \\
+    \textit{Built with React, React Router, Axios, and Vite} & \hfill \textit{\href{https://github.com/jansg08/nc-news}{GitHub Repository}} or \textit{\href{https://nc-news.pages.dev}{Hosted Version}} \\
+    \vspace{-4mm}                                                                                                                                                                                        \\
     \multicolumn{2}{@{}X@{}}{
     \begin{minipage}[t]{\linewidth}
-        \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-            \item[--] Offers users a clean and accessible presentation of the news served up by the API described previously
-            \item[--] Delivers content promptly and seamlessly with the use of client-side routing and optimistic rendering
-            \item[--] Embedded with a rudimentary authentication layer with persistent storage of the logged in user
-            \item[--] Optimised with memoisation for auth methods and content filtered for repitition to reduce API calls
-        \end{itemize}
+        A fast and responsive news aggregation site presenting articles from the previously built API.\@ Quick navigation and optmistic rendering provide user's with an app-like experience.
     \end{minipage}
-    }                                                                                                                                       \\
-    \vspace{-3mm}                                                                                                                           \\
+    }                                                                                                                                                                                                    \\
+    \vspace{-3mm}                                                                                                                                                                                        \\
 \end{tabularx}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-    \textbf{Restaurant Booking Service}                              & \hfill Nov 2024                                                              \\[2.75pt]
-    \vspace{-5mm}                                                                                                                           \\
-    \textit{Built with React, React Router, React Native, Vite, Expo, PostgreSQL, and Supabase} \\
+    \textbf{Late Plate - A Restaurant Booking Service}                              & \hfill Nov 2024                                                                                          \\[2.75pt]
+    \vspace{-5mm}                                                                                                                                                                              \\
+    \textit{Built with React, React Router, React Native, PostgreSQL, and Supabase} & \hfill \textit{\href{https://github.com/AlfarooqAlmenghawi/Restaurant_Staff_Website}{GitHub Repository}} \\
     \multicolumn{2}{@{}X@{}}{
     \begin{minipage}[t]{\linewidth}
-        \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-            \item[--] Provides customers with a user-friendly React Native app to check restaurant availability and make last-minute reservations
-            \item[--] Delivers restaurant managers a React-based website to view bookings and manage restaurant details
-            \item[--] Powered by Supabase backend with geospatial data (PostGIS) and custom PostgreSQL functions for efficient booking queries
-            \item[--] Styled using Tailwind CSS and NativeWind, with vite-svgr for flexible implementation of vector graphics
-            \item[--] Secured with JWT authentication, session expiry, and a robust auth context protecting routes from unauthenticated access
-        \end{itemize}
+        A last-minute restaurant booking app for mobile. It's coupled with a web-based management tool for restaurant staff to view and manage booking among other actions. It's protect behind a JWT-based authentication layer
     \end{minipage}
-    }                                                                                                                                       \\
-    \vspace{-3mm}                                                                                                                           \\
+    }                                                                                                                                                                                          \\
+    \vspace{-3mm}                                                                                                                                                                              \\
 \end{tabularx}
 
 %Technical Experience
