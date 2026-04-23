@@ -116,20 +116,15 @@
 %	TITLE
 %----------------------------------------------------------------------------------------
 
-% \begin{tabularx}{\linewidth}{ @{}X X@{} }
-% \huge{Your Name}\vspace{2pt} & \hfill \emoji{incoming-envelope} email@email.com \\
-% \raisebox{-0.05\height}\faGithub\ username \ | \
-% \raisebox{-0.00\height}\faLinkedin\ username \ | \ \raisebox{-0.05\height}\faGlobe \ mysite.com  & \hfill \emoji{calling} number
-% \end{tabularx}
-
 \begin{tabularx}{\linewidth}{@{} C @{}}
-    \Huge{Jack Hansjee}                                                    \\[7.5pt]
-    \large{\textit{Aspiring Full-stack JavaScript Developer}} \vspace{2mm} \\
+    \Huge{Jack Hansjee}                                                                  \\[7.5pt]
+    \large{\textit{Aspiring Full-stack JavaScript Developer}} \vspace{2mm}               \\
     \href{https://github.com/jansg08}{\raisebox{-0.05\height}\faGithub\ jansg08} \ $|$ \
     \href{https://linkedin.com/in/jack-hansjee-79478b16b}{\raisebox{-0.05\height}\faLinkedin\ Jack Hansjee} \ $|$ \
     \href{mailto:jack@hansjee.com}{\raisebox{-0.05\height}\faEnvelope \ jack@hansjee.com} \ $|$ \
-    \href{tel:+44744301988}{\raisebox{-0.05\height}\faMobile \ 07443 019 881} \ $|$ \
-    \href{https://}{\raisebox{-0.05\height}{\faMapMarker*}\ London}        \\
+    \href{tel:+44744301988}{\raisebox{-0.05\height}\faMobile \ 07443 019 881}            \\
+    \vspace*{-2mm}
+    \href{https://}{\raisebox{-0.05\height}{\faMapMarker*}\ London - open to relocation} \\
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
@@ -138,12 +133,12 @@
 
 %Interests/ Keywords/ Summary
 \section{Summary}
-A keen interest in problem-solving has manifested itself in the pursuit of a
-software development position aided by the strong communication and analytical
-skills developed through the Northcoder's bootcamp. Proven to be a fast learner
-and a hard worker through time there as well as during a year out in a rare
-opportunity as a senior member of an auction house, managing and developing
-their technology platform.
+I am seeking to use my problem solving abilities in a software development role
+aided by strong communication and analytical skills acquired in the
+Northcoders's bootcamp. Proven to be a fast learner and a hard worker through
+time there as well as during a year out in a rare opportunity as a senior
+member of an auction house, responsible for managing and developing their
+technology platform.
 
 %----------------------------------------------------------------------------------------
 %	SKILLS
@@ -151,19 +146,41 @@ their technology platform.
 
 \section{Skills}
 \begin{tabularx}{\linewidth}{@{}l X@{}}
-    Programming Languages \hspace{10px} & \textbf{Javascript - in Node.js and the browser}        \\
-    Testing                             & \textbf{TDD (Test Driven Development), Jest, Supertest} \\
-    Back-end                            & \textbf{Express.js, PostgreSQL}                         \\
-    Front-end                           & \textbf{HTML, CSS}                                      \\
-    Hosting                             & \textbf{Cloudflare}                                     \\
-    Other                               & \textbf{Paired programming, technical communication}    \\%SDL, Agile and SCRUM methodologies
+    Programming Languages \hspace{10px} & \textbf{JavaScript, TypeScript, SQL, MATLAB}                 \\
+    Testing                             & \textbf{TDD (Test Driven Development), Jest, Supertest}      \\
+    Back-end                            & \textbf{Node.js, Express.js, PostgreSQL}                     \\
+    Front-end                           & \textbf{HTML, CSS, Tailwind, React, React Router v7 (Remix)} \\
+    Hosting                             & \textbf{Cloudflare, Supabase, Render}                        \\
+    CI/CD                               & \textbf{GitHub Actions}                                      \\
+    Other                               & \textbf{Paired programming, SDL, AGILE methodologies, LaTeX} \\%SDL, Agile and SCRUM methodologies
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
 % EXPERIENCE SECTIONS
 %----------------------------------------------------------------------------------------
 
+%Technical Experience
+
 \section{Technical Experience}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+    \textbf{Software Development in JavaScript, Northcoders} & \hfill Sept 2024 -- Nov 2024 \\[3.75pt]
+    \vspace{-5mm}                                                                           \\
+    \multicolumn{2}{@{}X@{}}{\textit{Skills}}                                               \\
+    \multicolumn{2}{@{}X@{}}{
+    \begin{minipage}[t]{\linewidth}
+        \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+            \item[--] Fostered open and articulate communication through frequent paired programming
+            \item[--] Cultivated a thorough understanding of core JavaScript nuances and the Node.js runtime
+            \item[--] Developed robust solutions through extensive use of test-driven development
+            \item[--] Gained a unique insight into client-server relations through a detailed full-stack curriculum
+        \end{itemize}
+    \end{minipage}
+    }                                                                                       \\
+    \vspace{-3mm}                                                                           \\
+\end{tabularx}
+
+\vspace{3mm}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
     \textbf{Head of Information Technology, Hotlotz Auctioneers} & \hfill Jun 2020 -- Aug 2021 \\[3.75pt]
@@ -193,39 +210,62 @@ their technology platform.
     }
 \end{tabularx}
 
-\vspace{3mm}
+%Projects
+
+\section{Projects}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-    \textbf{Northcoders} & \hfill Sept 2024 -- Nov 2024 \\[3.75pt]
-    \vspace{-5mm}                                       \\
-    \multicolumn{2}{@{}X@{}}{\textit{Skills}}           \\
+    \textbf{News API}                                                     & \hfill Oct 2024                                                                                                                                     \\[2.75pt]
+    \vspace{-5mm}                                                                                                                                                                                                               \\
+    \textit{Built with Node.js, Express.js, node-postgres and PostgreSQL} & \hfill \textit{\href{https://github.com/jansg08/news-api}{GitHub Repository}} or \textit{\href{https://news-api-m05g.onrender.com}{Hosted Version}} \\
+    \vspace{-4mm}                                                                                                                                                                                                               \\
     \multicolumn{2}{@{}X@{}}{
     \begin{minipage}[t]{\linewidth}
-        \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-            \item[--] Fostered open and articulate communication through frequent paired programming
-            \item[--] Cultivated a thorough understanding of core JavaScript nuances and the Node.js runtime
-            \item[--] Developed robust solutions through extensive use of test-driven development
-            \item[--] Garnered a unique insight into client-server relations through a detailed full-stack curriculum
-        \end{itemize}
-    \end{minipage}
-    }                                                   \\
-    \vspace{-3mm}                                       \\
-    \multicolumn{2}{@{}X@{}}{\textit{Project}}          \\
-    \multicolumn{2}{@{}X@{}}{
-    \begin{minipage}[t]{\linewidth}
-        \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-            \item[--] TBD
-        \end{itemize}
+        A lightweight, but robust RESTful API to read and write data for a news articles, their comments and their authors. Validated with full integration testing run in a GitHub Actions pipeline.
     \end{minipage}
     }
-\end{tabularx}
-\begin{tabularx}{\linewidth}{@{}l X@{}}
-    \vspace{-3mm}
-    %    Commented out temporarily for GDPR reasons                                                                                                                          \\
-    %    \textit{Reference:} & \textit{Matthew Elton, Managing Director} \hfill \textit{\href{mailto:matthew@hotlotz.com}{matthew@hotlotz.com}}
+    \vspace{-3mm}                                                                                                                                                                                                               \\                                                                  \\
 \end{tabularx}
 
-%Projects
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+    \textbf{NC News - A Frontend News Site}                  & \hfill Nov 2024                                                                                                                           \\[2.75pt]
+    \vspace{-5mm}                                                                                                                                                                                        \\
+    \textit{Built with React, React Router, Axios, and Vite} & \hfill \textit{\href{https://github.com/jansg08/nc-news}{GitHub Repository}} or \textit{\href{https://nc-news.pages.dev}{Hosted Version}} \\
+    \vspace{-4mm}                                                                                                                                                                                        \\
+    \multicolumn{2}{@{}X@{}}{
+    \begin{minipage}[t]{\linewidth}
+        A fast and responsive news aggregation site presenting articles from the previously built API.\@ Quick navigation and optmistic rendering provide user's with an app-like experience.
+    \end{minipage}
+    }                                                                                                                                                                                                    \\
+    \vspace{-3mm}                                                                                                                                                                                        \\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+    \textbf{Late Plate - A Restaurant Booking Service}                              & \hfill Nov 2024                                                                                          \\[2.75pt]
+    \vspace{-5mm}                                                                                                                                                                              \\
+    \textit{Built with React, React Router, React Native, PostgreSQL, and Supabase} & \hfill \textit{\href{https://github.com/AlfarooqAlmenghawi/Restaurant_Staff_Website}{GitHub Repository}} \\
+    \multicolumn{2}{@{}X@{}}{
+    \begin{minipage}[t]{\linewidth}
+        A last-minute restaurant booking app for Android and iOS. It's coupled with a web-based management tool for restaurant staff to view and manage booking among other actions.
+    \end{minipage}
+    }                                                                                                                                                                                          \\
+    \vspace{-3mm}                                                                                                                                                                              \\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+    \textbf{Campus Collective - A University Events Platform}       & \hfill Nov 2024                                                                                                                                                     \\[2.75pt]
+    \vspace{-5mm}                                                                                                                                                                                                                         \\
+    \textit{Built with TypeScript, Remix, PostgreSQL, and Supabase} & \hfill \textit{\href{https://github.com/jansg08/campus-collective}{GitHub Repository}} or \textit{\href{https://campuscollective.jack.hansjee.com}{Hosted Version}} \\
+    \multicolumn{2}{@{}X@{}}{
+    \begin{minipage}[t]{\linewidth}
+        An intuitive and secure events platform for university students to host and attend events on their campus. Server-side rendering offers users rapid page loads, more secure data loading, and better SEO.
+    \end{minipage}
+    }                                                                                                                                                                                                                                     \\
+    \vspace{-3mm}                                                                                                                                                                                                                         \\
+\end{tabularx}
+
+%Other Interests and Hobbies
+
 \section{Other Interests}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
@@ -257,12 +297,12 @@ their technology platform.
 %----------------------------------------------------------------------------------------
 %	EDUCATION
 %----------------------------------------------------------------------------------------
+
 \section{Education}
 \begin{tabularx}{\linewidth}{@{}l X@{}}
-    %2021 -- present & BEng (Aeronautical Engineering) at \textbf{Loughborough University} \hfill \\
-
-    3 A Levels at \textbf{Tanglin Trust School} (A, A, B) & \hfill 2018 -- 2020 \\
-    10 GCSEs at \textbf{The Harrodian School}             & \hfill 2016 -- 2018 \\
+    Aeronautical Engineering \textbf{Loughborough University} (incl.\ modules in computing) & \hfill 2021 -- 2024 \\
+    3 A Levels at \textbf{Tanglin Trust School}, Singapore (A, A, B)                        & \hfill 2018 -- 2020 \\
+    10 GCSEs at \textbf{The Harrodian School}, London (9, 9, 8)                             & \hfill 2016 -- 2018 \\
 \end{tabularx}
 
 %\vfill
