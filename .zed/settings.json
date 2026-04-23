@@ -1,0 +1,16 @@
+// Folder-specific settings
+//
+// For a full list of overridable settings, and general information on folder-specific settings,
+// see the documentation: https://zed.dev/docs/configuring-zed#settings-files
+{
+  "lsp": {
+    "texpresso-lsp": {
+      "initialization_options": {
+        "root_tex": "cv.tex",
+      },
+      "settings": {
+        "preview_follow_cursor": true, // default true, makes preview constantly follow the position of the cursor
+      },
+    },
+  },
+}
