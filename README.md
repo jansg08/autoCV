@@ -10,7 +10,7 @@ The template is designed to be clean with sections for
 - Header with Font Awesome icons
 
 ## Quickstart
-- Fork this repo (you can use the `Use this template` button)
+- Generate your copy of the repo using the `Use this template` button
 - Give the workflow write permissions for your forked repo (Settings -> Actions -> General)
 - Modify the `cv.tex` file and push changes to your repo
 - Set GitHub pages source to build branch (Settings -> Pages)
@@ -50,4 +50,5 @@ PS: If you liked the template, do star :star: it! Thanks!
 
 - [gradfolio](https://github.com/jitinnair1/gradfolio) - a minimal, quick-setup template for a personal website/portfolio
 - [Tail](https://github.com/jitinnair1/tail) - a minimal, quick-setup template for a blog
+- [snippet-book](https://github.com/jitinnair1/snippet-book) -terminal style, clean Jekyll blog theme with catppuccin colours
 
